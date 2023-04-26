@@ -1,0 +1,30 @@
+ /* CSS styling for the application */
+ body {
+    font-family: Arial, sans-serif;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input[type="date"] {
+    padding: 5px;
+    font-size: 16px;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  #cycle-phase {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  select {
+    padding: 5px;
+    font-size: 16px;
+  }

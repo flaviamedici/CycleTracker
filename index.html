@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menstrual Cycle Tracker</title>
+  <style>
+   
+  </style>
+</head>
+<body>
+  <h1>Menstrual Cycle Tracker</h1>
+  <p>Select the start date of your menstrual cycle:</p>
+  <label for="start-date">Start Date:</label>
+  <input type="date" id="start-date">
+  <br>
+  <label for="cycle-length">Cycle Length:</label>
+  <select id="cycle-length">
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+    <option value="32">32</option>
+    <option value="33">33</option>
+    <option value="34">34</option>
+  </select>
+  <br>
+  <button onclick="calculateCyclePhase()">Calculate</button>
+  <div id="cycle-phase"></div>
+
+  <script src="app.js">  </script>
+</body>
+</html>

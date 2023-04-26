@@ -1,7 +1,8 @@
-Menstrual Cycle Tracker
+<H1>Menstrual Cycle Tracker</H1>
+
 The Menstrual Cycle Tracker is a web application that helps women track their menstrual cycles and determine which phase of the cycle they are currently in. The application is built using HTML, CSS, and JavaScript and runs in any modern web browser.
 
-Features
+<h3>Features</h3>
 The application has the following features:
 
 A calendar interface that allows users to select the start date of their menstrual cycle.
@@ -15,5 +16,5 @@ To use the Menstrual Cycle Tracker, simply open the index.html file in a modern 
 
 The application will display a message indicating which phase of your menstrual cycle you are currently in. The display is updated in real-time as you change the start date or cycle length.
 
-License
+<h3>License</h3>
 The Menstrual Cycle Tracker is open-source software licensed under the MIT License. Feel free to use, modify, and distribute the software as you see fit.

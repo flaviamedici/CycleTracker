@@ -1,3 +1,27 @@
+function validate() {
+  const startDate = document.getElementById('start-date').value;
+  const cycleLength = document.getElementById('cycle-length').value;
+  const error = document.getElementById('error');
+
+  // Check if start date and cycle length are selected
+  if (!startDate || !cycleLength) {
+    error.innerText = 'Please select a start date and cycle length.';
+    return;
+  }
+
+  // Check if start date is valid
+  const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+  if (!dateRegex.test(startDate)) {
+    error.innerText = 'Please enter a valid date in the format YYYY-MM-DD.';
+    return;
+  }
+
+    // Call calculateCyclePhase if validation is successful
+    error.innerText = '';
+    calculateCyclePhase();
+  }
+
+
 function calculateCyclePhase() {
     const startDate = new Date(document.getElementById('start-date').value);
     const currentDate = new Date();
@@ -36,4 +60,3 @@ function calculateCyclePhase() {
     You should avoid ${avoid}.
     The best foods for you to eat are ${foods}`;
   }
-  

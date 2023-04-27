@@ -8,12 +8,12 @@
 </head>
 <body>
   <h1>Menstrual Cycle Tracker</h1>
-  <p>Select the start date of your menstrual cycle:</p>
+  <p>When did your last period start?</p>
   <label for="start-date">Start Date:
-  <input type="date" id="start-date"></label>
+  <input type="date" id="start-date" required></label>
   <br>
-  <label for="cycle-length">Cycle Length:
-  <select id="cycle-length">
+  <label for="cycle-length">How long is your cycle?
+  <select id="cycle-length" required>
     <option value="28">28</option>
     <option value="29">29</option>
     <option value="30">30</option>
@@ -23,8 +23,9 @@
     <option value="34">34</option>
   </select></label>
   <br>
-  <button onclick="calculateCyclePhase()">Calculate</button>
+  <button onclick="validate()">Calculate</button>
   <div id="cycle-phase"></div>
+  <div id="error" class="error"></div>
 
   <script src="app.js">  </script>
 </body>
